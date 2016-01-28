@@ -16,7 +16,7 @@ class Proposal < ActiveRecord::Base
   has_one :session
   has_one :track, through: :session
 
-  validates :title, :abstract, presence: true
+  validates :title, :abstract, :talk_type, presence: true
   validates :abstract, length: {maximum: 600}
   validates :title, length: {maximum: 60}
 
