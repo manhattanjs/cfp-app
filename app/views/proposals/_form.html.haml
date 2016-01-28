@@ -8,6 +8,8 @@
         GitHub Flavored Markdown.
     = proposal.title_input(f)
     = proposal.abstract_input(f)
+    = f.label :talk_type
+    = f.select :talk_type, options_for_select(['Technical', 'Passion']), include_blank: true
 
     %h3 For Review Committee
     %p.help-block
