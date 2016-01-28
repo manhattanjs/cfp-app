@@ -264,6 +264,10 @@ end
 #  updated_at            :datetime
 #  updated_by_speaker_at :datetime
 #  proposal_data         :text
+#  talk_type             :string
+#  twitter_username      :string
+#  talk_frequency        :string
+#  speaker_experience    :string
 #
 # Indexes
 #
