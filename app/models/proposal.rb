@@ -266,7 +266,7 @@ end
 #  proposal_data         :text
 #  talk_type             :string
 #  twitter_username      :string
-#  talk_frequency        :string
+#  talk_frequency        :text
 #  speaker_experience    :string
 #
 # Indexes

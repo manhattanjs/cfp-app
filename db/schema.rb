@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160128112630) do
+ActiveRecord::Schema.define(version: 20160130185953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20160128112630) do
     t.text     "proposal_data"
     t.string   "talk_type"
     t.string   "twitter_username"
-    t.string   "talk_frequency"
+    t.text     "talk_frequency"
     t.string   "speaker_experience"
   end
 
