@@ -25,6 +25,10 @@ describe ProposalsController, type: :controller do
           abstract: proposal.abstract,
           details: proposal.details,
           pitch: proposal.pitch,
+          talk_type: proposal.talk_type,
+          twitter_username: proposal.twitter_username,
+          talk_frequency: proposal.talk_frequency,
+          speaker_experience: proposal.speaker_experience
           speakers_attributes: {
             '0' => {
               bio: 'my bio',

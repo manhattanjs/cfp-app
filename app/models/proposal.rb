@@ -16,7 +16,7 @@ class Proposal < ActiveRecord::Base
   has_one :session
   has_one :track, through: :session
 
-  validates :title, :abstract, presence: true
+  validates :title, :abstract, :talk_type, presence: true
   validates :abstract, length: {maximum: 600}
   validates :title, length: {maximum: 60}
 
@@ -264,6 +264,10 @@ end
 #  updated_at            :datetime
 #  updated_by_speaker_at :datetime
 #  proposal_data         :text
+#  talk_type             :string
+#  twitter_username      :string
+#  talk_frequency        :text
+#  speaker_experience    :string
 #
 # Indexes
 #

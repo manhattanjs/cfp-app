@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217214608) do
+ActiveRecord::Schema.define(version: 20160130185953) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -127,6 +127,10 @@ ActiveRecord::Schema.define(version: 20151217214608) do
     t.datetime "updated_at"
     t.datetime "updated_by_speaker_at"
     t.text     "proposal_data"
+    t.string   "talk_type"
+    t.string   "twitter_username"
+    t.text     "talk_frequency"
+    t.string   "speaker_experience"
   end
 
   add_index "proposals", ["event_id"], name: "index_proposals_on_event_id", using: :btree
