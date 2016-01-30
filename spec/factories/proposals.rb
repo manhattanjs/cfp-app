@@ -5,6 +5,10 @@ FactoryGirl.define do
     abstract "This and that"
     details "Various other things"
     pitch "Baseball."
+    talk_type "Technical"
+    twitter_username "@adele"
+    talk_frequency   "No this talk is brand new"
+    speaker_experience "I ain't new to this."
 
 
     trait :with_reviewer_public_comment do
