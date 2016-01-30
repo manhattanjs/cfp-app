@@ -125,6 +125,12 @@ class ProposalDecorator < ApplicationDecorator
       hint: 'Provide a concise description for the program limited to 600 characters or less.'
   end
 
+  def talk_frequency_input(form)
+    form.input :talk_frequency,
+    label: "Have you given this talk before and if so, where? ",
+    input_html: { rows: 3 }
+  end
+
   private
 
   def speaker

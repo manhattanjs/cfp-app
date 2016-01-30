@@ -9,7 +9,10 @@
     = proposal.title_input(f)
     = proposal.abstract_input(f)
     = f.label :talk_type
-    = f.select :talk_type, options_for_select(['Technical', 'Passion']), include_blank: true
+    = f.select :talk_type, options_for_select(['Technical', 'Passion'])
+    = f.input :twitter_username, label: "Twitter"
+    = f.input :speaker_experience, label: "Have you ever spoken at a meetup/conference/event before?"
+    = proposal.talk_frequency_input(f)
 
     %h3 For Review Committee
     %p.help-block

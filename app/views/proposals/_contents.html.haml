@@ -2,6 +2,9 @@
 .markdown{ data: { 'field-id' => 'proposal_title' } }
   = proposal.title
 
+%h3 Type of Talk
+= proposal.talk_type
+
 %h3 Abstract
 .markdown{ data: { 'field-id' => 'proposal_abstract' } }
   = proposal.abstract
@@ -21,3 +24,11 @@
       = value.capitalize
       %div
 
+%h3 Twitter
+= proposal.twitter_username
+
+%h3 Talk Frequency
+= proposal.talk_frequency
+
+%h3 Speaker Experience
+= proposal.speaker_experience
